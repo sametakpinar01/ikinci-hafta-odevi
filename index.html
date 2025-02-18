@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <!-- Başlangıç: Head Bölümü -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CV Görüntüleme Aracı</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bitiş: Head Bölümü -->
+  </head>
+  <body>
+
+    <!-- Başlangıç: Başlık -->
+    <h1 class="main-title">CV Görüntüleme Aracı</h1>
+    <!-- Bitiş: Başlık -->
+
+    <div class="main-container">
+      <!-- Başlangıç: Form Sütunu -->
+      <form class="form-container">
+        <!-- Başlangıç: Metin İçerikleri -->
+        <h2 class="colspan-headers">Metin İçerikleri</h2>
+        <table>
+          <!-- Başlangıç: İsim Kutusu -->
+          <tr>
+            <th colspan="2"><h3>İsim Kutusu</h3></th>
+          </tr>
+          <tr>
+            <td><label for="name">Ad Soyad:</label></td>
+            <td><input type="text" id="name" name="name" /></td>
+          </tr>
+          <tr>
+            <td><label for="title">Ünvan:</label></td>
+            <td><input type="text" id="title" name="title" /></td>
+          </tr>
+          <!-- Bitiş: İsim Kutusu -->
+          <!-- Başlangıç: İletişim Bilgileri -->
+          <tr>
+            <th colspan="2"><h3>İletişim Bilgileri</h3></th>
+          </tr>
+          <tr>
+            <td><label for="phone-number">Telefon No:</label></td>
+            <td><input type="number" id="phone-number" name="phone-number" /></td>
+          </tr>
+          <tr>
+            <td><label for="email">E-mail:</label></td>
+            <td><input type="email" id="email" name="email" /></td>
+          </tr>
+          <tr>
+            <td><label for="website">Web Sitesi:</label></td>
+            <td><input type="url" id="website" name="website" /></td>
+          </tr>
+          <tr>
+            <td><label for="address">Adres:</label></td>
+            <td>
+              <textarea id="address" name="address" rows="4"></textarea>
+            </td>
+          </tr>
+          <!-- Bitiş: İletişim Bilgileri -->
+          <!-- Başlangıç: Eğitim Bilgileri -->
+          <tr>
+            <th colspan="2"><h3>Eğitim Bilgileri</h3></th>
+          </tr>
+          <tr>
+            <td><label for="education-infos">Açıklama:</label></td>
+            <td>
+              <textarea id="education-infos" name="education-infos" rows="4"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="school-numbers">Okul Sayısı:</label></td>
+            <td>
+              <select id="school-numbers" name="school-numbers">
+                <option value="" selected disabled>Seçiniz</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <div id="school-inputs-container"></div>
+            </td>
+          </tr>
+          <!-- Bitiş: Eğitim Bilgileri -->
+          <!-- Başlangıç: Yetenekler -->
+          <tr>
+            <th colspan="2"><h3>Yetenekler</h3></th>
+          </tr>
+          <tr>
+            <td><label for="skill-infos">Açıklama:</label></td>
+            <td>
+              <textarea id="skill-infos" name="skill-infos" rows="4"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="skill-numbers">Yetenek Sayısı:</label></td>
+            <td>
+              <select id="skill-numbers" name="skill-numbers">
+                <option value="" selected disabled>Seçiniz</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <div id="skill-inputs-container"></div>
+            </td>
+          </tr>
+          <!-- Bitiş: Yetenekler -->
+          <!-- Başlangıç: Hakkımda -->
+          <tr>
+            <th colspan="2"><h3>Hakkımda</h3></th>
+          </tr>
+          <tr>
+            <td><label for="about-me">Açıklama:</label></td>
+            <td>
+              <textarea id="about-me" name="about-me" rows="4"></textarea>
+            </td>
+          </tr>
+          <!-- Bitiş: Hakkımda -->
+          <!-- Başlangıç: İş Deneyimi -->
+          <tr>
+            <th colspan="2"><h3>İş Deneyimi</h3></th>
+          </tr>
+          <tr>
+            <td><label for="job-experience-text">Açıklama:</label></td>
+            <td>
+              <textarea id="job-experience-text" name="job-experience-text"></textarea>
+            </td>
+          </tr>
+          <!-- Bitiş: İş Deneyimi -->
+        </table>
+        <!-- Bitiş: Metin İçerikleri -->
+      </form>
+      <!-- Bitiş: Form Sütunu -->
+
+      <!-- Başlangıç: Görünüş Sütunu -->
+      <div class="appearance">
+        <h2 class="colspan-headers">Görünüş</h2>
+        <table>
+          <!-- Başlangıç: Renkler -->
+          <tr>
+            <th colspan="2"><h3>Renkler</h3></th>
+          </tr>
+          <tr>
+            <td><label for="background-color">Arkaplan Rengi:</label></td>
+            <td>
+              <input type="color" id="background-color" value="#dd2e2e" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="left-column-colour">Sol Kolon Rengi:</label></td>
+            <td>
+              <input type="color" id="left-column-colour" value="#ad1a1a" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="name-box-colour">İsim Kutusu Rengi:</label></td>
+            <td>
+              <input type="color" id="name-box-colour" value="#383838" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="name-box-text-colour">İsim Kutusu Yazı Rengi:</label></td>
+            <td>
+              <input type="color" id="name-box-text-colour" value="#ffffff" />
+            </td>
+          </tr>
+          <!-- Bitiş: Renkler -->
+          <!-- Başlangıç: Yazı Tipi -->
+          <tr>
+            <th colspan="2"><h3>Yazı Tipi</h3></th>
+          </tr>
+          <tr>
+            <td><label for="font-type">Yazı Tipi:</label></td>
+            <td>
+              <select id="font-type">
+                <option value="" selected disabled>Seçiniz</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Lucida Handwriting">Lucida Handwriting</option>
+              </select>
+            </td>
+          </tr>
+          <!-- Bitiş: Yazı Tipi -->
+          <!-- Başlangıç: Fotoğraf -->
+          <tr>
+            <th colspan="2"><h3>Fotoğraf</h3></th>
+          </tr>
+          <tr>
+            <td><label for="photo-frame-shape">Fotoğraf Çerçevesi Şekli:</label></td>
+            <td>
+              <select id="photo-frame-shape">
+                <option value="" selected disabled>Seçiniz</option>
+                <option value="square">Köşeli</option>
+                <option value="oval">Oval</option>
+                <option value="rounded">Yuvarlak</option>
+              </select>
+            </td>
+          </tr>
+          <!-- Bitiş: Fotoğraf -->
+          <!-- Başlangıç: Başlık Altı Çizgileri -->
+          <tr>
+            <th colspan="2"><h3>Başlık Altı Çizgileri</h3></th>
+          </tr>
+          <tr>
+            <td><label for="line-colour">Çizgi Rengi:</label></td>
+            <td>
+              <input type="color" id="line-colour" value="#000000" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="line-shape">Çizgi Şekli:</label></td>
+            <td>
+              <select id="line-shape">
+                <option value="" selected disabled>Seçiniz</option>
+                <option value="solid">Düz</option>
+                <option value="dotted">Noktalı</option>
+                <option value="dashed">Çizgili</option>
+              </select>
+            </td>
+          </tr>
+          <!-- Bitiş: Başlık Altı Çizgileri -->
+        </table>
+      </div>
+      <!-- Bitiş: Görünüş Sütunu -->
+
+      <!-- Başlangıç: CV Gösterim Ekranı -->
+      <div class="cv-show-container">
+        <!-- Başlangıç: Sol Sütun -->
+        <div class="left-column">
+          <div class="photo-container">
+            <div class="photo">FOTOĞRAF</div>
+          </div>
+          <div class="communication-container">
+            <h2>İLETİŞİM</h2>
+            <hr class="cv-line" />
+            <ul>
+              <li id="display-phone">Telefon: 123-456-7890</li>
+              <li id="display-email">Email: example@example.com</li>
+              <li id="display-website">Web Sitesi: www.example.com</li>
+              <li id="display-address">Adres: Lorem Ipsum, Dolor Sit Amet</li>
+            </ul>
+            <h2>EĞİTİM BİLGİLERİ</h2>
+            <hr class="cv-line" />
+            <div id="display-education-infos">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem in
+                itaque veritatis porro, nihil expedita...
+              </p>
+              <ul id="school-list"></ul>
+            </div>
+            <h2>YETENEKLER</h2>
+            <hr class="cv-line" />
+            <p id="display-skill-infos">
+              ducimus quam minima nesciunt modi voluptatum nemo maxime.
+              Architecto, facilis repellendus.
+            </p>
+            <ul id="skill-list"></ul>
+          </div>
+        </div>
+        <!-- Bitiş: Sol Sütun -->
+        <!-- Başlangıç: Sağ Sütun -->
+        <div class="right-column">
+          <div class="user-header">
+            <h2 id="display-name">{ Kişinin Adı ve Soyadı }</h2>
+            <hr class="cv-line" />
+            <h2 id="display-title">{ Ünvanı }</h2>
+          </div>
+          <div class="about-me-container">
+            <h2>HAKKIMDA</h2>
+            <hr class="cv-line" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
+              illum...
+            </p>
+          </div>
+          <div class="work-experience-container">
+            <h2>İŞ DENEYİMİ</h2>
+            <hr class="cv-line" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
+              perspiciatis...
+            </p>
+          </div>
+        </div>
+        <!-- Bitiş: Sağ Sütun -->
+      </div>
+      <!-- Bitiş: CV Gösterim Ekranı -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

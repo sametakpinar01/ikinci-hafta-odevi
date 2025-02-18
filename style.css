@@ -1,0 +1,253 @@
+/* Başlangıç: Genel Ayarlar */
+body {
+  margin: 0;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+/* Bitiş: Genel Ayarlar */
+
+/* Başlangıç: Ana Başlık */
+.main-title {
+  text-align: center;
+  border: 2px solid black;
+  padding: 20px 0;
+  margin: 5px 0px;
+  background-color: #fff;
+}
+/* Bitiş: Ana Başlık */
+
+/* Başlangıç: Ana Konteyner */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  gap: 10px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: #fff;
+}
+/* Bitiş: Ana Konteyner */
+
+/* Başlangıç: Form ve Appearance Sütunları */
+.form-container,
+.appearance {
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+  max-width: 500px;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: #ddd;
+}
+.form-container {
+  background-color: #afafaf;
+  border-left: none;
+  border-bottom: none;
+}
+.appearance {
+  border-bottom: none;
+}
+/* Bitiş: Form ve Appearance Sütunları */
+
+/* Başlangıç: Form Başlıkları */
+.colspan-headers {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  width: 100%;
+}
+/* Bitiş: Form Başlıkları */
+
+/* Başlangıç: Form Tablosu */
+.form-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.form-container table th,
+.form-container table td {
+  vertical-align: middle;
+  padding: 8px;
+}
+.form-container table td:first-child {
+  width: 30%;
+  white-space: nowrap;
+}
+.form-container table td:last-child {
+  width: 70%;
+}
+.form-container table td input,
+.form-container table td select,
+.form-container table td textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+textarea {
+  resize: none;
+  overflow-y: auto;
+}
+/* Bitiş: Form Tablosu */
+
+/* Başlangıç: CV Gösterim Alanı */
+.cv-show-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  border: 2px solid black;
+  padding: 15px;
+  background-color: #b22222; 
+  color: black;
+  border-right: none;
+  border-bottom: none;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+}
+/* Bitiş: CV Gösterim Alanı */
+
+/* Başlangıç: Sol Sütun */
+.left-column {
+  width: 42%;
+  background-color: #8b0000;
+  color: black;
+  padding: 0 30px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+}
+/* Bitiş: Sol Sütun */
+
+/* Başlangıç: Sağ Sütun */
+.right-column {
+  width: 75%;
+  background-color: #b22222;
+  color: black;
+  padding: 0 15px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+}
+/* Bitiş: Sağ Sütun */
+
+/* Başlangıç: Fotoğraf */
+.photo {
+  border: 3px solid #000;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 30px auto 80px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* Bitiş: Fotoğraf */
+
+/* Başlangıç: Çizgi */
+.cv-line {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+/* Bitiş: Çizgi */
+
+/* Başlangıç: Kullanıcı Başlığı */
+.user-header {
+  background-color: #383838;
+  color: white;
+  padding: 20px;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Bitiş: Kullanıcı Başlığı */
+
+/* Başlangıç: Dinamik Okul/Yetenek Satırı */
+.school-entry {
+  display: flex; 
+  flex-direction: row;
+  align-items: flex-start; 
+  margin-bottom: 10px;
+}
+/* Bitiş: Dinamik Okul/Yetenek Satırı */
+
+/* Başlangıç: Her bir alan (Okul/Açıklama, Yetenek/Açıklama) */
+.school-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin-right: 15px;
+}
+
+.school-field label {
+  margin-right: 5px;
+}
+/* Bitiş: Her bir alan (Okul/Açıklama, Yetenek/Açıklama) */
+
+/* Başlangıç: Dinamik alanlar için tooltip (küçük kutu) */
+.char-limit-hint {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9999;
+  background-color: #eee;
+  padding: 2px 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 0.85em;
+  color: #555;
+  margin-top: 4px;
+  white-space: nowrap;
+}
+/* Bitiş: Dinamik alanlar için tooltip (küçük kutu) */
+
+/* Başlangıç: Statik alanlar için tooltip (farklı stil, arka plan aynı kalır) */
+.static-tooltip {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9999;
+  background-color: #333;
+  padding: 2px 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 0.85em;
+  color: #fff;
+  margin-top: 4px;
+  white-space: nowrap;
+}
+/* Bitiş: Statik alanlar için tooltip (farklı stil, arka plan aynı kalır) */
+
+/* Başlangıç: Responsive */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-container,
+  .appearance,
+  .left-column,
+  .right-column {
+    width: 100%;
+    max-width: none;
+  }
+  .form-container table td:first-child,
+  .form-container table td:last-child {
+    width: auto;
+  }
+}
+/* Bitiş: Responsive */
